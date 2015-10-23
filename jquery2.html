@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Jquery Functions</title>
+	<script type="text/javascript"></script>
+	<script src ="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#hide').click(function(){
+				$('h2').hide();
+			})
+			$('#show').click(function(){
+				$('h2').show();
+			})
+			$('h3').hover(function(){
+				$('h4').text('I am working');
+			})
+			$('button').click(function(){
+				$('h2').css('background-color', 'yellow');
+			})
+
+		})
+	</script>
+</head>
+<body>
+	<div id = "first">
+		<button id='hide'>Click me</button>
+		<button id='show'>Show</button>
+		<h3>Click ME</h3>
+		<h2>Today is Thursday</h2>
+		<h4>I will be home</h4>
+
+	</div>	
+
+</body>
+</html>
